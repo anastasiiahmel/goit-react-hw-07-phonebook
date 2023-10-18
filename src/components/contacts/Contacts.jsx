@@ -1,9 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
+
 import { ContactsList } from '../contactsList/ContactsList';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { selectContacts, selectFilter, selectLoading } from '..//../redux/contactSlice';
 import { deleteContactById } from '..//../redux/contactOperations';
 
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Loader } from 'components/loader/Loader';
 
 
 
@@ -30,8 +32,9 @@ export const Contacts = () => {
 
 
     if (isLoading) {
-        return <p>Loading data...</p>
+        return <Loader/>
     }
+    // console.log(isLoading)
 
     
 

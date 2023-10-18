@@ -1,7 +1,9 @@
-import { FilterStyle } from "./FilterStyle.styled";
 import { useDispatch, useSelector } from 'react-redux';
+
 import { onFilterChange } from "redux/contactSlice";
 import { selectFilter } from "redux/contactSlice";
+
+import { FilterStyle } from "./FilterStyle.styled";
 
 
 

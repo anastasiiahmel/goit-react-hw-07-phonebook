@@ -1,8 +1,6 @@
 
 import { ContainersStyle } from './Container.styled';
 
-
-
 export const Containers = ({title, children}) => {
     return(
         <ContainersStyle>

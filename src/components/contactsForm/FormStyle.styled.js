@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 
-export const FormStyle = styled.div`
+export const FormStyle = styled.form`
   .label {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ export const FormStyle = styled.div`
     color: #dcdcdc;
     border: none;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 50px;
     padding: 5px;
     width: 100px;
     cursor: pointer;

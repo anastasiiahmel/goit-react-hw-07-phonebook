@@ -1,12 +1,11 @@
-
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 import { Section } from './section/Section';
 import { Containers } from './containers/Container';
 import { Form } from './contactsForm/ContactsForm.jsx';
 import { Filter } from './filter/Filter';
 import { Contacts } from './contacts/Contacts';
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
 import { getAllContacts } from 'redux/contactOperations';
 
 

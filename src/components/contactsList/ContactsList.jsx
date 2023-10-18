@@ -1,7 +1,6 @@
 import { ContactsStyle } from "./ContactsList.styled";
 
 
-
 export const ContactsList = ({filteredContacts, onDeleteContact}) => {
     return(
         <ContactsStyle>
@@ -9,7 +8,7 @@ export const ContactsList = ({filteredContacts, onDeleteContact}) => {
                 <li className="list" key={id}>
                     <h3 className="list-name">{name}:</h3>
                     <p className="list-number">{number}</p>
-                    <button className="btn btn-primary btn-block btn-large" 
+                    <button className="btn-delete" 
                     type="button"
                     onClick={() => onDeleteContact(id)}
                     >Delete</button>
